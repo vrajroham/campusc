@@ -94,7 +94,7 @@
                                                                     <div class="img-thumbnail">
                                                                         <img src="{{url("assets")}}/img/clients/client-1.jpg" alt="">
                                                                     </div>
-                                                                    <p><strong>John Smith</strong><span>CEO &amp; Founder - Okler</span></p>
+                                                                    <p><strong>John Smith</strong><span>College Authority</span></p>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4">
