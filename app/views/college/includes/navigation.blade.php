@@ -12,7 +12,6 @@
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-search hidden-xs">
-
                         </div>
                         <nav class="header-nav-top">
                             <ul class="nav nav-pills">
@@ -61,7 +60,7 @@
                                                 Link 4
                                             </a>
                                             <ul class="dropdown-menu popup-gallery-ajax">
-                                                <li><a href="#" data-ajax-on-modal>Sub Link 1</a></li>
+                                                <li><a href="#">Sub Link 1</a></li>
                                                 <li><a href="#">Sub Link 2</a></li>
                                             </ul>
                                         </li>
