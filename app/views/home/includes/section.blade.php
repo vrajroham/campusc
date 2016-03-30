@@ -2,9 +2,9 @@
     <div class="container">
        @if(Request::session()->get("status")!=null)
            <div class="row">
-                <div class="col-md-12 alert alert-warning text-center">
+                <div class="col-md-12 alert alert-success text-center">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
-                    <i class="fa fa-exclamation"></i>
+                    <i class="fa fa-check"></i>
                     {{Request::session()->get("status")}}
                 </div>
            </div>
