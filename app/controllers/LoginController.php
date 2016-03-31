@@ -11,7 +11,7 @@ class LoginController extends BaseController {
 		if(Auth::attempt(array('email'=>Input::get('email'),'password'=>Input::get('password')))){
 				return Redirect::intended("college.dashboard");
 		}
-		Request::session()->flash('status', 'Access Restricted.  Error : Login Required');
+		Request::session()->flash('error', 'Access Restricted.  Error : Login Required');
 		return Redirect::route('home'); //redirect to home
 	}
 

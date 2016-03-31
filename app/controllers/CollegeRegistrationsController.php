@@ -45,7 +45,7 @@ class CollegeRegistrationsController extends \BaseController {
 			$message->to(Input::get('email'), Input::get('college_name'))->subject('Welcome again!');
 		});
 
-		Request::session()->flash('status', 'Account Successfully Created! Please check your email for further details.');
+		Request::session()->flash('success', 'Account Successfully Created! Please check your email for further details.');
 		return Redirect::route('home');
 	}
 

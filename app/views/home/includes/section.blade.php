@@ -1,14 +1,23 @@
 <div class="home-intro light" id="home-intro">
     <div class="container">
-       @if(Request::session()->get("status")!=null)
+       @if(Request::session()->get("error")!=null)
            <div class="row">
-                <div class="col-md-12 alert alert-warning text-center">
+                <div class="col-md-12 alert alert-danger text-center">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
                     <i class="fa fa-exclamation"></i>
-                    {{Request::session()->get("status")}}
+                    {{Request::session()->get("error")}}
                 </div>
            </div>
         @endif
+           @if(Request::session()->get("success")!=null)
+               <div class="row">
+                   <div class="col-md-12 alert alert-success text-center">
+                       <a class="close" data-dismiss="alert" href="#">&times;</a>
+                       <i class="fa fa-check"></i>
+                       {{Request::session()->get("success")}}
+                   </div>
+               </div>
+           @endif
         <div class="row">
             <div class="col-md-8">
                 <p>
